@@ -1,0 +1,59 @@
+airquality<-datasets::airquality
+head(airquality,5)
+airquality[,c(1,2)]
+airquality[2,2]
+airquality[,-5]
+df<-airquality[,-5]
+df
+
+
+airquality$Solar.R
+mean(airquality$Solar.R,na=T)
+summary(airquality[,5])
+
+summary(airquality[,2])
+summary(airquality)
+ 
+plot(airquality$Wind)
+
+plot(airquality)
+
+plot(airquality$Wind,type = 'p')
+plot(airquality$Wind,type = 'l')
+
+plot(airquality$Ozone,xlab = 'interval',ylab = 'frequency',main='ozone distribution')
+plot(airquality$Ozone,xlab = 'interval',ylab = 'frequency',main='ozone distribution',col='red')
+
+
+
+barplot(airquality$Ozone,xlab = 'interval',ylab = 'frequency',main='ozone distribution')
+
+
+hist(airquality$Ozone)
+boxplot(airquality$Ozone)
+
+
+
+
+
+
+
+par(mfrow=c(3,3),mar=c(2,5,2,1),las=0,bty='o')
+plot(airquality$Wind)
+
+plot(airquality)
+
+plot(airquality$Wind,type = 'p')
+plot(airquality$Wind,type = 'l')
+
+plot(airquality$Ozone,xlab = 'interval',ylab = 'frequency',main='ozone distribution')
+plot(airquality$Ozone,xlab = 'interval',ylab = 'frequency',main='ozone distribution',col='red')
+
+
+
+barplot(airquality$Ozone,xlab = 'interval',ylab = 'frequency',main='ozone distribution')
+
+
+hist(airquality$Ozone)
+boxplot(airquality$Ozone)
+boxplot(airquality)
