@@ -1,3 +1,4 @@
+### Basic Stats
 airquality<-datasets::airquality
 head(airquality,5)
 airquality[,c(1,2)]
